@@ -24,7 +24,8 @@ let s:loaded = 1
 
 let s:rainbow_conf = {
 \	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
-\	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+\	'ctermfgs': ['red', 'yellow', 'cyan', 'magenta'],
+\	'cterms': ['bold', 'bold', 'bold', 'bold'],
 \	'operators': '_,_',
 \	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
 \	'separately': {
@@ -124,8 +125,9 @@ func rainbow#show()
 		for id in range(b:rainbow_loaded)
 			let ctermfg = b:rainbow_conf.ctermfgs[id % len(b:rainbow_conf.ctermfgs)]
 			let guifg = b:rainbow_conf.guifgs[id % len(b:rainbow_conf.guifgs)]
-			exe 'hi default rainbow_p'.id.' ctermfg='.ctermfg.' guifg='.guifg
-			exe 'hi default rainbow_o'.id.' ctermfg='.ctermfg.' guifg='.guifg
+			let cterm = b:rainbow_conf.cterms[id % len(b:rainbow_conf.cterms)]
+			exe 'hi default rainbow_p'.id.' ctermfg='.ctermfg.' guifg='.guifg.' cterm='.cterm
+			exe 'hi default rainbow_o'.id.' ctermfg='.ctermfg.' guifg='.guifg.' cterm='.cterm
 		endfor
 	endif
 endfunc
