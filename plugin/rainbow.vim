@@ -24,8 +24,8 @@ let s:loaded = 1
 
 let s:rainbow_conf = {
 \	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
-\	'ctermfgs': ['red', 'yellow', 'cyan', 'magenta'],
-\	'cterms': ['bold', 'bold', 'bold', 'bold'],
+\	'ctermfgs': ['red', 'yellow', 'cyan', 'green', 'white'],
+\	'cterms': ['bold', 'bold', 'bold', 'bold', 'bold'],
 \	'operators': '_,_',
 \	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
 \	'separately': {
