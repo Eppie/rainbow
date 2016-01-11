@@ -1,33 +1,25 @@
-Rainbow Parentheses Improved 
+Rainbow Parentheses Improved
 ===
->	help you read complex code by showing diff level of parentheses in diff color !! 
+>	help you read complex code by showing diff level of parentheses in diff color !!
 
-Description [(这里有中文版)](https://github.com/luochen1990/rainbow/blob/master/README_zh.md)
+Description
 ---------------------------------------------------------------------------------------------------
 
 As everyone knows, the most complex codes were composed of a mass of different kinds of parentheses(typically: lisp).
 This plugin will help you read these codes by showing different levels of parentheses in different colors.
-you can also find this plugin in **[www.vim.org](http://www.vim.org/scripts/script.php?script_id=4176)**.
 
-#### lisp
-![lisp](https://raw.githubusercontent.com/luochen1990/rainbow/demo/lisp.png)
-#### html
-![html](https://raw.githubusercontent.com/luochen1990/rainbow/demo/html.png)
-#### [more](https://github.com/luochen1990/rainbow/blob/demo/more.md)
+### What is improved?
 
-### What is improved ? 
-
-- no limit of parentheses levels. 
+- no limit of parentheses levels.
 - separately edit guifgs and ctermfgs (the colors used for highlighting)
 - now you can design your own parentheses  such as 'begin' and 'end'.
-- you can also configure anything seprately for different type of files. 
+- you can also configure anything seprately for different type of files.
 - now you can even decide to let some operators (like + - * / , ==) hilighted with the parentheses together.
 - json style configuration used, more understandable and readable, easier for advanced configuration.
 - the code is shorter and easier to be read now.
 - smoother and faster.
-- the chinese document is added.
 
-### Referenced: 
+### Referenced:
 - http://www.vim.org/scripts/script.php?script_id=1561 (Martin Krischik)
 - http://www.vim.org/scripts/script.php?script_id=3772 (kien)
 
@@ -37,7 +29,7 @@ Install:
 ### via Vundle:
 
 ```vim
-Plugin 'luochen1990/rainbow'
+Plugin 'Eppie/rainbow'
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 ```
 
@@ -94,7 +86,3 @@ User Command:
 - **:RainbowToggle**		--you can use it to toggle this plugin.
 
 ------------------------------------------------------------------
-**Rate this script if you like it, 
-and i'll appreciate it and improve this plugin for you because of your support ! 
-just goto [this page](http://www.vim.org/scripts/script.php?script_id=4176) and choose `Life Changing` and click `rate`**
- 
